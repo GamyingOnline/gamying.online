@@ -9,10 +9,10 @@ We are committed to delivering cutting-edge tech solutions while maintaining an 
 ## What We Do
 
 - **Open Source Development**: Creating and maintaining impactful open-source projects
-- **Web3 Solutions**: Building next-generation decentralized applications
-- **Technical Innovation**: Pushing boundaries with modern tech stacks
-- **Creative Frontend Development**: Crafting beautiful and responsive user interfaces
-- **Custom Software Development**: Tailoring solutions to meet your unique needs
+- **Web3 Solutions**: Building next-generation decentralized applications and services
+- **Technical Innovation**: Pushing boundaries with modern tech stacks such as Rust and other emerging technologies
+- **Creative Frontend Development**: Crafting aesthetic and complex user interfaces with modern frameworks
+- **Custom Software Development**: Tailoring solutions to meet your unique needs 
 
 ## Join Us
 
