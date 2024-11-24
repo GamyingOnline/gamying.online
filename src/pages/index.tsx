@@ -21,8 +21,9 @@ const Index = () => {
         <a
           href="https://github.com/GamyingOnline/gamying.online"
           className="transition-transform hover:scale-110 duration-300 ease-out block"
+          target='_blank'
         >
-          <div className="p-4 rounded-full hover:bg-white/5 transition-colors">
+          <div className="p-12 rounded-full hover:bg-white/5 transition-colors">
             <FaGithub size={72} className="animate-bounce" />
           </div>
         </a>
