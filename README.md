@@ -1,40 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Gamying.Online
 
-## Getting Started
+Welcome to Gamying.Online - A collective of Tehelka Open-Source Developers for all your tech needs.
 
-First, run the development server:
+## Our Mission
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+We are committed to delivering cutting-edge tech solutions while maintaining an open-source ecosystem that promotes collaboration, innovation, and excellence in software development.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What We Do
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **Open Source Development**: Creating and maintaining impactful open-source projects
+- **Web3 Solutions**: Building next-generation decentralized applications
+- **Technical Innovation**: Pushing boundaries with modern tech stacks
+- **Creative Frontend Development**: Crafting beautiful and responsive user interfaces
+- **Custom Software Development**: Tailoring solutions to meet your unique needs
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Join Us
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+We're always looking for passionate developers who share our vision. Whether you're a seasoned developer or just starting your journey, there's a place for you in our community.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contact
 
-## Learn More
+- GitHub: [GamyingOnline](https://github.com/GamyingOnline)
+- Website: [gamying.online](https://gamying.online)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+© 2024 Gamying.Online. All rights reserved.
