@@ -19,3 +19,30 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.text-gradient {
+  @apply bg-gradient-to-r from-[#e50914] via-[#FFD700] to-[#e50914] bg-clip-text text-transparent;
+  background-size: 300% 200%;
+}
+
+.text-gradient1 {
+  @apply bg-gradient-to-r from-[#5c5757] via-[#1d1b11] to-[#e50914] bg-clip-text text-transparent;
+  background-size: 300% 200%;
+}
+
+
+
+
+@keyframes glitter {
+  0%, 15%, 85%, 100% {
+    background-position: 0% 50%;
+  }
+  40%, 60% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-glitter {
+  animation: glitter 6s linear infinite;
+}
