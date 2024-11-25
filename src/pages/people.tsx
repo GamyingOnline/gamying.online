@@ -5,7 +5,7 @@ import PersonCard from '../components/PersonCard';
 const People = () => {
   const team = [
     {
-      name: "Ayam",
+      name: "Ayam Dobhal",
       role: "Founder & Lead Developer",
       image: "/devs/ayam.jpg",
       github: "https://github.com/ayamdobhal",
@@ -13,7 +13,7 @@ const People = () => {
       portfolio: "https://iamdobhal.dev",
     },
     {
-      name: "Sumit",
+      name: "Sumit Kumar",
       role: "Lead Developer",
       image: "/devs/sumit.jpeg",
       github: "https://github.com/imsk17",
@@ -21,7 +21,7 @@ const People = () => {
       portfolio: "https://imsk17.org",
     },
     {
-      name: "Bhanu",
+      name: "Bhanu Pratap Singh",
       role: "Developer & Designer",
       image: "/devs/bhanu.jpeg",
       github: "https://github.com/codeptor",
@@ -29,7 +29,7 @@ const People = () => {
       portfolio: "https://bhanueso.me",
     },
     {
-      name: "Neeraj",
+      name: "Neeraj Godiyal",
       role: "Creative Frontend Specialist",
       image: "/devs/koro.png",
       github: "https://github.com/NeerajGodiyal",
@@ -37,7 +37,7 @@ const People = () => {
       portfolio: "https://neerajgodiyal.me",
     },
     {
-      name: "Rupansh",
+      name: "Rupansh Sekar",
       role: "Everything Developer",
       image: "/devs/rupansh.jpeg",
       github: "https://github.com/rupansh",
@@ -45,7 +45,7 @@ const People = () => {
       portfolio: "https://rupansh.github.io",
     },
     {
-      name: "Aman",
+      name: "Aman Goyal",
       role: "AI Engineer & DevOps",
       image: "/devs/aman.jpeg",
       github: "https://github.com/agoyel25",
@@ -55,7 +55,7 @@ const People = () => {
     {
       name: "Vibhu Prasad",
       role: "Chief Data Officer",
-      image: "/devs/vibhu.jpg",
+      image: "/devs/vibhu.png",
       // github: "https://github.com/agoyel25",
       // linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
       // portfolio: "https://agoyel25.github.io",
