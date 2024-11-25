@@ -52,6 +52,22 @@ const People = () => {
       linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
       portfolio: "https://agoyel25.github.io",
     },
+    {
+      name: "Vibhu Prasad",
+      role: "Chief Data Officer",
+      image: "/devs/vibhu.jpg",
+      // github: "https://github.com/agoyel25",
+      // linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
+      // portfolio: "https://agoyel25.github.io",
+    },
+    {
+      name: "Kunal Singh",
+      role: "Chief Human Resources Officer",
+      image: "/devs/kunalsingh.jpg",
+      github: "https://github.com/kunxlfr",
+      // linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
+      // portfolio: "https://agoyel25.github.io",
+    },
   ];
 
   return (
