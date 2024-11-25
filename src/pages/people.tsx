@@ -14,7 +14,7 @@ const People = () => {
     },
     {
       name: "Neeraj Godiyal",
-      role: "Creative Frontend Specialist / Co-Founder",
+      role: "Creative Frontend Specialist | Co-Founder",
       image: "/devs/koro.png",
       github: "https://github.com/NeerajGodiyal",
       linkedin: "https://linkedin.com/in/neerajgodiyal",
@@ -22,7 +22,7 @@ const People = () => {
     },
     {
       name: "Sumit Kumar",
-      role: "Lead Developer / CTO",
+      role: "Lead Developer | CTO",
       image: "/devs/sumit.jpeg",
       github: "https://github.com/imsk17",
       linkedin: "https://linkedin.com/in/imsk17",
