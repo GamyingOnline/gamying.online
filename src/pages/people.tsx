@@ -36,20 +36,20 @@ const People = () => {
       portfolio: "https://bhanueso.me",
     },
     {
-      name: "Rupansh Sekar",
-      role: "Everything Developer",
-      image: "/devs/rupansh.jpeg",
-      github: "https://github.com/rupansh",
-      linkedin: "https://linkedin.com/in/rupansh-s",
-      portfolio: "https://rupansh.github.io",
-    },
-    {
       name: "Aman Goyal",
       role: "AI Engineer | DevOps",
       image: "/devs/aman.jpeg",
       github: "https://github.com/agoyel25",
       linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
       portfolio: "https://agoyel25.github.io",
+    },
+    {
+      name: "Rupansh Sekar",
+      role: "Everything Developer",
+      image: "/devs/rupansh.jpeg",
+      github: "https://github.com/rupansh",
+      linkedin: "https://linkedin.com/in/rupansh-s",
+      portfolio: "https://rupansh.github.io",
     },
     {
       name: "Vibhu Prasad",
