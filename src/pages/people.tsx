@@ -13,6 +13,14 @@ const People = () => {
       portfolio: "https://iamdobhal.dev",
     },
     {
+      name: "Neeraj Godiyal",
+      role: "Creative Frontend Specialist / Co-Founder",
+      image: "/devs/koro.png",
+      github: "https://github.com/NeerajGodiyal",
+      linkedin: "https://linkedin.com/in/neerajgodiyal",
+      portfolio: "https://neerajgodiyal.me",
+    },
+    {
       name: "Sumit Kumar",
       role: "Lead Developer",
       image: "/devs/sumit.jpeg",
@@ -29,15 +37,7 @@ const People = () => {
       portfolio: "https://bhanueso.me",
     },
     {
-      name: "Neeraj Godiyal",
-      role: "Creative Frontend Specialist",
-      image: "/devs/koro.png",
-      github: "https://github.com/NeerajGodiyal",
-      linkedin: "https://linkedin.com/in/neerajgodiyal",
-      portfolio: "https://neerajgodiyal.me",
-    },
-    {
-      name: "Rupansh Sekar",
+      name: "Chindi Rupansh Sekar",
       role: "Everything Developer",
       image: "/devs/rupansh.jpeg",
       github: "https://github.com/rupansh",
