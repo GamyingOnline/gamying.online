@@ -22,7 +22,7 @@ const People = () => {
     },
     {
       name: "Sumit Kumar",
-      role: "Lead Developer",
+      role: "Lead Developer / CTO",
       image: "/devs/sumit.jpeg",
       github: "https://github.com/imsk17",
       linkedin: "https://linkedin.com/in/imsk17",
