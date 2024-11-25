@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaGlobeAsia } from 'react-icons/fa';
 
 interface PersonCardProps {
   name: string;
@@ -7,10 +7,10 @@ interface PersonCardProps {
   image: string;
   github?: string;
   linkedin?: string;
-  twitter?: string;
+  portfolio?: string;
 }
 
-const PersonCard = ({ name, role, image, github, linkedin, twitter }: PersonCardProps) => {
+const PersonCard = ({ name, role, image, github, linkedin, portfolio }: PersonCardProps) => {
   return (
     <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all">
       <div className="flex flex-col items-center">
@@ -34,9 +34,9 @@ const PersonCard = ({ name, role, image, github, linkedin, twitter }: PersonCard
               <FaLinkedin size={24} />
             </a>
           )}
-          {twitter && (
-            <a href={twitter} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-              <FaTwitter size={24} />
+          {portfolio && (
+            <a href={portfolio} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+              <FaGlobeAsia size={24} />
             </a>
           )}
         </div>

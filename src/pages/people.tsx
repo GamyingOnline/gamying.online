@@ -10,7 +10,7 @@ const People = () => {
       image: "/devs/ayam.jpg",
       github: "https://github.com/ayamdobhal",
       linkedin: "https://linkedin.com/in/ayamdobhal",
-      twitter: "https://twitter.com/ayamdobhal",
+      portfolio: "https://iamdobhal.dev",
     },
     {
       name: "Sumit",
@@ -18,7 +18,7 @@ const People = () => {
       image: "/devs/sumit.jpeg",
       github: "https://github.com/imsk17",
       linkedin: "https://linkedin.com/in/imsk17",
-      twitter: "https://twitter.com/imsk17_",
+      portfolio: "https://imsk17.org",
     },
     {
       name: "Bhanu",
@@ -26,7 +26,7 @@ const People = () => {
       image: "/devs/bhanu.jpeg",
       github: "https://github.com/codeptor",
       linkedin: "https://linkedin.com/in/bhanu911",
-      twitter: "https://twitter.com/esotericfrr",
+      portfolio: "https://bhanueso.me",
     },
     {
       name: "Neeraj",
@@ -34,7 +34,7 @@ const People = () => {
       image: "/devs/koro.png",
       github: "https://github.com/NeerajGodiyal",
       linkedin: "https://linkedin.com/in/neerajgodiyal",
-      twitter: "https://twitter.com/NeerajGodiyal",
+      portfolio: "https://neerajgodiyal.me",
     },
     {
       name: "Rupansh",
@@ -42,15 +42,15 @@ const People = () => {
       image: "/devs/rupansh.jpeg",
       github: "https://github.com/rupansh",
       linkedin: "https://linkedin.com/in/rupansh-s",
-      twitter: "https://twitter.com/rupansh",
+      portfolio: "https://rupansh.github.io",
     },
     {
       name: "Aman",
       role: "AI Engineer & DevOps",
       image: "/devs/aman.jpeg",
-      github: "htttps://github.com/agoyel25",
+      github: "https://github.com/agoyel25",
       linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
-      twitter: "https://twitter.com/aman_goyal25",
+      portfolio: "https://agoyel25.github.io",
     },
   ];
 
@@ -72,7 +72,7 @@ const People = () => {
                 image={person.image}
                 github={person.github}
                 linkedin={person.linkedin}
-                twitter={person.twitter}
+                portfolio={person.portfolio}
               />
             ))}
           </div>
