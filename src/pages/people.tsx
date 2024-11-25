@@ -36,14 +36,7 @@ const People = () => {
       linkedin: "https://linkedin.com/in/bhanu911",
       portfolio: "https://bhanueso.me",
     },
-    {
-      name: "Chindi Rupansh Sekar",
-      role: "Everything Developer",
-      image: "/devs/rupansh.jpeg",
-      github: "https://github.com/rupansh",
-      linkedin: "https://linkedin.com/in/rupansh-s",
-      portfolio: "https://rupansh.github.io",
-    },
+    
     {
       name: "Aman Goyal",
       role: "AI Engineer & DevOps",
@@ -51,6 +44,14 @@ const People = () => {
       github: "https://github.com/agoyel25",
       linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
       portfolio: "https://agoyel25.github.io",
+    },
+    {
+      name: "Chindi Rupansh Sekar",
+      role: "Everything Developer",
+      image: "/devs/rupansh.jpeg",
+      github: "https://github.com/rupansh",
+      linkedin: "https://linkedin.com/in/rupansh-s",
+      portfolio: "https://rupansh.github.io",
     },
     {
       name: "Vibhu Prasad",
