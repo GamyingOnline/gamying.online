@@ -65,7 +65,7 @@ const People = () => {
       role: "Chief Human Resources Officer",
       image: "/devs/kunalsingh.jpg",
       github: "https://github.com/kunxlfr",
-      // linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
+      linkedin: "https://www.linkedin.com/in/kunalsingh16",
       // portfolio: "https://agoyel25.github.io",
     },
   ];
