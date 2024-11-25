@@ -62,7 +62,7 @@ const People = () => {
           <h1 className="text-6xl font-extrabold text-gradient tracking-wider animate-glitter mb-12">
             Our Team
           </h1>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((person, index) => (
               <PersonCard
@@ -80,17 +80,16 @@ const People = () => {
           <div className="mt-16 text-center">
             <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              We&apos;re always looking for talented developers who are passionate about open source 
+              We&apos;re always looking for talented developers who are passionate about open source
               and pushing the boundaries of technology.
             </p>
-            <a 
-              href="https://github.com/GamyingOnline"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a
+              href="mailto:gamying.online@iamdobhal.dev"
               className="inline-block bg-gradient-to-r from-[#FF3BFF] via-[#ECBFBF] to-[#5C24FF] text-black font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform"
             >
               Apply Now
             </a>
+
           </div>
         </div>
       </main>
