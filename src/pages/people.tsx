@@ -80,7 +80,7 @@ const People = () => {
           <div className="mt-16 text-center">
             <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              We're always looking for talented developers who are passionate about open source 
+              We&apos;re always looking for talented developers who are passionate about open source 
               and pushing the boundaries of technology.
             </p>
             <a 

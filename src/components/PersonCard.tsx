@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 interface PersonCardProps {
@@ -13,10 +14,12 @@ const PersonCard = ({ name, role, image, github, linkedin, twitter }: PersonCard
   return (
     <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all">
       <div className="flex flex-col items-center">
-        <img 
+        <Image 
           src={image} 
           alt={name} 
-          className="w-32 h-32 rounded-full object-cover mb-4 border-2 border-white/10"
+          width={128} 
+          height={128} 
+          className="rounded-full object-cover mb-4 border-2 border-white/10 w-32 h-32"
         />
         <h3 className="text-2xl font-bold text-gradient animate-glitter mb-2">{name}</h3>
         <p className="text-gray-400 mb-4">{role}</p>

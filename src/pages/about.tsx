@@ -15,7 +15,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6">Welcome to the Chaos</h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
               Welcome to the chaotic lair of Tehelka Open-Source Developers, where tech dreams are born, hacked, and occasionally explode.
-              At Gamying.Online, we're not just building things; we're dismantling the status quo and duct-taping our own weird ideas back together. 
+              At Gamying.Online, we&apos;re not just building things; we&apos;re dismantling the status quo and duct-taping our own weird ideas back together. 
               Our mission? To blur the line between brilliance and madness (but mostly madness).
             </p>
           </section>
@@ -42,9 +42,9 @@ const About = () => {
             <div className="bg-white/5 rounded-xl p-8 backdrop-blur-sm border border-white/10">
               <h3 className="text-2xl font-bold mb-4 text-gradient">Join the Revolution</h3>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                We're the rogue coders your project deserves—half caffeine, half code, and 100% unbothered by convention. 
-                Need something done? We'll do it. Need something undone? Even better. Join the revolution. Or don't. 
-                Either way, we're coming for your tech stack. 💀
+                We&apos;re the rogue coders your project deserves—half caffeine, half code, and 100% unbothered by convention. 
+                Need something done? We&apos;ll do it. Need something undone? Even better. Join the revolution. Or don&apos;t. 
+                Either way, we&apos;re coming for your tech stack. 💀
               </p>
               <a 
                 href="https://github.com/GamyingOnline"
