@@ -1,4 +1,4 @@
-# [Gamying.Online](https://github.com/GamyingOnline)
+# [Gamying.Online](https://gamying.online)
 
 
 Welcome to Gamying.Online - A collective of Tehelka Open-Source Developers for all your tech needs.
