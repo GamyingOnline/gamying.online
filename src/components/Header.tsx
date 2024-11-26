@@ -8,14 +8,12 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full z-50">
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-xl"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FF3BFF]/20 via-[#ECBFBF]/20 to-[#5C24FF]/20"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-lg"></div>
 
-      <nav className="container mx-auto px-4 py-5 flex items-center justify-between relative">
+      <nav className="container mx-auto px-6 py-5 flex items-center justify-between relative">
         <Link
           href="/"
-          className="text-2xl font-bold text-bold text-gradient hover:scale-105 transition-transform"
+          className="text-2xl font-bold text-white/90 hover:text-white transition-colors duration-300"
         >
           GamyingOnline
         </Link>
@@ -28,10 +26,10 @@ const Header = () => {
             <Link
               key={path}
               href={path}
-              className={`text-lg relative group ${
+              className={`text-lg font-medium transition-colors duration-300 ${
                 isActive(path)
-                  ? "text-gradient font-bold animate-glitter"
-                  : "text-white font-bold hover:text-gradient hover:animate-glitter"
+                  ? "text-white"
+                  : "text-white/70 hover:text-white"
               }`}
               aria-current={isActive(path) ? "page" : undefined}
             >
@@ -41,7 +39,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className="absolute bottom-0 w-full h-px bg-gradient-to-r from-[#FF3BFF]/20 via-[#ECBFBF]/40 to-[#5C24FF]/20"></div>
+      <div className="absolute bottom-0 w-full h-[1px] bg-white/5"></div>
     </header>
   );
 };
