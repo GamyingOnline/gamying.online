@@ -4,6 +4,9 @@ import { IoSparkles } from "react-icons/io5";
 import { HiCube } from "react-icons/hi";
 import Header from "../components/Header";
 import Background from "../components/Background";
+import '../styles/components.css';
+import '../styles/animations.css';
+import '../styles/utilities.css';
 
 const Index: React.FC = () => {
   return (
@@ -21,21 +24,21 @@ const Index: React.FC = () => {
                 <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12">
                   A collective of Tehelka Open-Source Developers for all your Tech needs.
                 </p>
-                <div className="flex flex-wrap justify-center gap-8">
+                <div className="flex flex-wrap justify-center gap-12">
                   <a
                     href="https://github.com/GamyingOnline"
                     className="btn-primary"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaGithub className="text-[#00FFFF]" size={24} />
+                    <FaGithub className="text-[#00FFFF]" size={22} />
                     <span>View Our Work</span>
                   </a>
                   <a
                     href="/people"
                     className="btn-primary"
                   >
-                    <IoSparkles className="text-[#FF3BFF]" size={24} />
+                    <IoSparkles className="text-[#FF3BFF]" size={22} />
                     <span>Meet The Team</span>
                   </a>
                 </div>

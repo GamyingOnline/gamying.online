@@ -1,5 +1,8 @@
 import Header from "../components/Header";
 import PersonCard from "../components/PersonCard";
+import '../styles/components.css';
+import '../styles/animations.css';
+import '../styles/utilities.css';
 
 const People = () => {
   const team = [

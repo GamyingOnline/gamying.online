@@ -1,4 +1,6 @@
 import Header from "../components/Header";
+import '../styles/components.css';
+import '../styles/animations.css';
 
 const About = () => {
   return (

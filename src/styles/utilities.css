@@ -1,0 +1,28 @@
+.accent-glow {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.accent-glow:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.hover-scale {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.section-gradient-1 {
+  background: linear-gradient(180deg, transparent, rgba(92, 36, 255, 0.05));
+}
+
+.section-gradient-2 {
+  background: linear-gradient(180deg, transparent, rgba(255, 59, 255, 0.05));
+}
+
+.section-gradient-3 {
+  background: linear-gradient(180deg, transparent, rgba(0, 255, 255, 0.05));
+}
