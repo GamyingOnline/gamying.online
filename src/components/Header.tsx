@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import path from "path";
 
 const Header = () => {
   const router = useRouter();
@@ -22,6 +23,7 @@ const Header = () => {
           {[
             { path: "/about", label: "About" },
             { path: "/people", label: "People" },
+            {path: "/projects", label: "Projects"},
           ].map(({ path, label }) => (
             <Link
               key={path}

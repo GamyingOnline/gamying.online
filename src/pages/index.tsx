@@ -1,25 +1,25 @@
 import React from 'react';
-import { FaGithub, FaCode, FaRocket, FaLaptopCode, FaBrain } from "react-icons/fa";
+import { FaGithub, FaCode, FaRocket, FaLaptopCode, FaBrain, FaChevronDown } from "react-icons/fa";
 import { IoSparkles } from "react-icons/io5";
 import { HiCube } from "react-icons/hi";
 import Header from "../components/Header";
 import Background from "../components/Background";
+import ProjectCard from "../components/ProjectCard";
+import PersonCard from "../components/PersonCard";
 import '../styles/components.css';
 import '../styles/animations.css';
 import '../styles/utilities.css';
 
 const Index: React.FC = () => {
-  return (
-    <>
-      <Header />
-      <Background />
-      <main className="min-h-screen w-full text-white relative overflow-hidden">
-        <div className="relative z-10">
-          <section className="min-h-screen flex items-center justify-center relative">
-            <div className="text-center px-4 z-10 max-w-6xl">
-              <div className="animate-fadeIn">
-                <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-wider mb-8">
-                  We Build The Future
+  const projects = [
+    {
+      name: "yt-yapper",
+      description: "A feature-rich Discord Music Bot built with modern technologies. Brings high-quality music playback and advanced features to Discord servers.",
+      tech: ["Rust", "Discord API", "Music Streaming"],
+      github: "https://github.com/GamyingOnline/yt-yapper",
+    },
+    {
+      name: "fm-oxide",
                 </h1>
                 <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12">
                   A collective of Tehelka Open-Source Developers for all your Tech needs.
