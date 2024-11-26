@@ -8,12 +8,12 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full z-50">
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-lg"></div>
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-md"></div>
 
-      <nav className="container mx-auto px-6 py-5 flex items-center justify-between relative">
+      <nav className="container mx-auto px-8 py-4 flex items-center justify-between relative">
         <Link
           href="/"
-          className="text-2xl font-bold text-white/90 hover:text-white transition-colors duration-300"
+          className="text-2xl font-bold tracking-tight text-white hover:opacity-90 transition-opacity duration-200"
         >
           GamyingOnline
         </Link>
@@ -26,10 +26,10 @@ const Header = () => {
             <Link
               key={path}
               href={path}
-              className={`text-lg font-medium transition-colors duration-300 ${
+              className={`text-base tracking-wide transition-opacity duration-200 ${
                 isActive(path)
-                  ? "text-white"
-                  : "text-white/70 hover:text-white"
+                  ? "text-white font-medium"
+                  : "text-white/85 hover:opacity-90"
               }`}
               aria-current={isActive(path) ? "page" : undefined}
             >
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className="absolute bottom-0 w-full h-[1px] bg-white/5"></div>
+      <div className="absolute bottom-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/8 to-transparent"></div>
     </header>
   );
 };
