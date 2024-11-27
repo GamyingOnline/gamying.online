@@ -44,6 +44,15 @@ const People = () => {
       portfolio: "https://agoyel25.github.io",
     },
     {
+      name: "Karan Pargal",
+      role: "10x Hackathon Winner | Web 3 Developer",
+      image: "/devs/karan.jpeg",
+      github: "https://github.com/karanpargal",
+      linkedin: "https://linkedin.com/in/karan-pargal",
+      portfolio: "https://karanpargal.vercel.app/",
+
+    },
+    {
       name: "Rupansh Sekar",
       role: "Everything Developer",
       image: "/devs/rupansh.jpeg",
