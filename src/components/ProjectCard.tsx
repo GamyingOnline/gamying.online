@@ -33,11 +33,11 @@ const ProjectCard = ({ name, description, tech, github, live, image }: ProjectCa
       <p className="text-gray-300 mb-6 text-lg flex-grow">
         {description}
       </p>
-      <div className="flex flex-wrap gap-3 mb-8">
+      <div className="flex flex-wrap gap-2 mb-8">
         {tech.map((tech, i) => (
           <span
             key={i}
-            className="px-4 py-1.5 text-sm rounded-full bg-gradient-to-r from-[rgba(255,59,255,0.1)] to-[rgba(92,36,255,0.1)] border border-[rgba(255,59,255,0.2)] text-white/90"
+            className="tag-primary px-3 py-1 text-sm rounded-md inline-flex items-center justify-center text-white/90"
           >
             {tech}
           </span>
