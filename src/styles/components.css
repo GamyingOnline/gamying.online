@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .glass-card {
-  @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl;
+  @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl relative z-10;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -67,7 +67,8 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center gap-3 px-7 py-3.5 text-[15px] font-medium rounded-xl text-white relative overflow-hidden;
+    @apply inline-flex items-center justify-center gap-3 px-7 py-3.5 text-[15px] font-medium rounded-xl text-white relative overflow-hidden;
+    width: 190px;
     background: linear-gradient(135deg, 
       rgba(255, 59, 255, 0.12) 0%,
       rgba(92, 36, 255, 0.12) 100%
@@ -122,6 +123,18 @@
   }
 
   .glass-card {
-    @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-lg;
+    @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-lg relative z-10;
   }
+}
+
+main {
+  @apply relative z-10;
+}
+
+section {
+  @apply relative z-10;
+}
+
+.container {
+  @apply relative z-10;
 }

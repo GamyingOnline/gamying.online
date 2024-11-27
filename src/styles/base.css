@@ -1,33 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ffffff;
   --primary: #FF3BFF;
   --secondary: #5C24FF;
-  --accent: #00FFFF;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--background);
 }
 
 body {
-  color: var(--foreground);
-  font-family: 'Outfit', sans-serif;
-  background: var(--background);
-  background-image: radial-gradient(circle at 50% 0%, rgba(92, 36, 255, 0.15) 0%, transparent 60%);
-  background-attachment: fixed;
+  @apply bg-[#0A0A0A] font-sans;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.text-gradient {
-  background: linear-gradient(to right, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+::selection {
+  background: rgba(255, 59, 255, 0.2);
 }

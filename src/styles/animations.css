@@ -1,4 +1,3 @@
-
 .hero-text {
   background: linear-gradient(to right, #fff 20%, #FF3BFF 40%, #5C24FF 60%, #fff 80%);
   background-size: 200% auto;
@@ -71,15 +70,12 @@
   animation: fadeIn 1s ease-out forwards;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translate(0, 0);
   }
   50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+    transform: translate(-1%, -1%);
   }
 }
 
@@ -87,10 +83,35 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d, #0f2027);
-  background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  right: 0;
+  bottom: 0;
   z-index: -1;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.animated-background::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(255, 59, 255, 0.4) 0%, transparent 35%),
+    radial-gradient(circle at 70% 70%, rgba(92, 36, 255, 0.4) 0%, transparent 35%),
+    radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.2) 0%, transparent 45%),
+    radial-gradient(circle at 20% 80%, rgba(255, 59, 255, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(92, 36, 255, 0.3) 0%, transparent 40%);
+  filter: blur(100px) saturate(150%);
+  mix-blend-mode: screen;
+  animation: subtleFloat 20s ease-in-out infinite;
+  opacity: 0.85;
+}
+
+.animated-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
 }
