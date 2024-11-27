@@ -10,9 +10,6 @@ const fragmentShaderSource = `
 precision highp float;
 uniform float time;
 uniform vec2 resolution;
-uniform vec3 color1;
-uniform vec3 color2;
-uniform vec3 color3;
 
 vec3 mod289(vec3 x) {
   return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -55,21 +52,68 @@ float snoise(vec2 v) {
   return 130.0 * dot(m, g);
 }
 
+vec3 hsv2rgb(vec3 c) {
+    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+
+float smootherstep(float x) {
+    x = clamp(x, 0.0, 1.0);
+    return x * x * x * (x * (x * 6.0 - 15.0) + 10.0);
+}
+
+vec3 getEvolvingColor(float t, float speed, float offset) {
+    float slowTime = t * 0.075;  // Slightly faster than before
+    
+    float hueBase = slowTime * speed + offset;
+    float hueModulation = sin(slowTime * 0.07) * 0.1;  
+    float hue = fract(hueBase + hueModulation);
+    
+    float satBase = 0.75;  // Keep rich base saturation
+    float satModulation = sin(slowTime * 0.045) * 0.15;
+    float saturation = satBase + satModulation;
+    
+    float valBase = 0.85;  // Keep bright base value
+    float valModulation = sin(slowTime * 0.03 + offset * 6.28) * 0.1;
+    float value = valBase + valModulation;
+    
+    return hsv2rgb(vec3(hue, saturation, value));
+}
+
 void main() {
-  vec2 uv = gl_FragCoord.xy / resolution.xy;
-  float n1 = snoise(uv * 2.0 + time * 0.05);
-  float n2 = snoise(uv * 1.5 - time * 0.07);
-  float n3 = snoise(uv * 3.0 + time * 0.09);
-  
-  vec3 col = mix(color1, color2, n1 * 0.5 + 0.5);
-  col = mix(col, color3, n2 * 0.5 + 0.5);
-  col += vec3(n3 * 0.05);
-  
-  gl_FragColor = vec4(col, 1.0);
+    vec2 uv = gl_FragCoord.xy / resolution.xy;
+    float slowTime = time * 0.15;  
+    
+    float n1 = snoise(uv * 1.1 + slowTime * 0.03);
+    float n2 = snoise(uv * 0.8 - slowTime * 0.025);
+    float n3 = snoise(uv * 1.4 + slowTime * 0.02);
+    float n4 = snoise(uv * 0.6 - slowTime * 0.035);
+    
+    vec3 color1 = getEvolvingColor(time, 0.005, 0.0);    // Slightly faster
+    vec3 color2 = getEvolvingColor(time, 0.004, 0.25);   // Slightly faster
+    vec3 color3 = getEvolvingColor(time, 0.006, 0.5);    // Slightly faster
+    vec3 color4 = getEvolvingColor(time, 0.0045, 0.75);  // Slightly faster
+    
+    float blend1 = smootherstep((n1 * 0.3 + 0.5) * 0.5 + 0.25);
+    float blend2 = smootherstep((n2 * 0.3 + 0.5) * 0.4 + 0.3);
+    float blend3 = smootherstep((n3 * 0.3 + 0.5) * 0.3 + 0.35);
+    
+    vec3 col = mix(color1, color2, blend1);
+    col = mix(col, color3, blend2);
+    col = mix(col, color4, blend3);
+    
+    float modulation = n4 * 0.01;
+    col += vec3(modulation);
+    
+    col = clamp(col * 1.1, 0.0, 1.0);  
+    
+    gl_FragColor = vec4(col, 1.0);
 }`;
 
 const FluidBackground: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animationFrameRef = useRef<number>();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -109,24 +153,8 @@ const FluidBackground: React.FC = () => {
 
     const timeLocation = gl.getUniformLocation(program, 'time');
     const resolutionLocation = gl.getUniformLocation(program, 'resolution');
-    const color1Location = gl.getUniformLocation(program, 'color1');
-    const color2Location = gl.getUniformLocation(program, 'color2');
-    const color3Location = gl.getUniformLocation(program, 'color3');
-
-    const generateRandomColor = () => [
-      Math.random() * 0.5 + 0.5,
-      Math.random() * 0.5 + 0.5,
-      Math.random() * 0.5 + 0.5
-    ];
-
-    const colors = [
-      generateRandomColor(),
-      generateRandomColor(),
-      generateRandomColor()
-    ];
 
     const startTime = Date.now();
-    let animationFrameId: number;
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -139,27 +167,21 @@ const FluidBackground: React.FC = () => {
 
     const render = () => {
       const time = (Date.now() - startTime) * 0.001;
+
       gl.uniform1f(timeLocation, time);
       gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
-      
-      const t = time * 0.05;
-      const c1 = colors[0].map(x => x + Math.sin(t) * 0.1);
-      const c2 = colors[1].map(x => x + Math.cos(t * 0.7) * 0.1);
-      const c3 = colors[2].map(x => x + Math.sin(t * 0.4) * 0.1);
-      
-      gl.uniform3fv(color1Location, new Float32Array(c1));
-      gl.uniform3fv(color2Location, new Float32Array(c2));
-      gl.uniform3fv(color3Location, new Float32Array(c3));
 
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-      animationFrameId = requestAnimationFrame(render);
+      animationFrameRef.current = requestAnimationFrame(render);
     };
 
     render();
 
     return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
       window.removeEventListener('resize', resizeCanvas);
-      cancelAnimationFrame(animationFrameId);
       gl.deleteProgram(program);
       gl.deleteShader(vs);
       gl.deleteShader(fs);
