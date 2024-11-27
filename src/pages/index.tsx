@@ -7,10 +7,6 @@ import ProjectCard from "../components/ProjectCard";
 import PersonCard from "../components/PersonCard";
 import { team } from "../data/team";
 import { projects } from "../data/projects";
-import '../styles/base.css';
-import '../styles/components.css';
-import '../styles/animations.css';
-import '../styles/utilities.css';
 
 const Index: React.FC = () => {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {

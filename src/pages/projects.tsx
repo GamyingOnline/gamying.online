@@ -3,9 +3,6 @@ import Header from "../components/Header";
 import Background from "../components/Background";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
-import '../styles/components.css';
-import '../styles/animations.css';
-import '../styles/utilities.css';
 
 const Projects = () => {
   return (

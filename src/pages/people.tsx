@@ -2,9 +2,6 @@ import Header from "../components/Header";
 import Background from "../components/Background";
 import PersonCard from "../components/PersonCard";
 import { team } from "../data/team";
-import '../styles/components.css';
-import '../styles/animations.css';
-import '../styles/utilities.css';
 
 const People = () => {
   return (

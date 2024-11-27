@@ -1,7 +1,5 @@
 import Header from "../components/Header";
 import Background from "../components/Background";
-import '../styles/components.css';
-import '../styles/animations.css';
 
 const About = () => {
   return (

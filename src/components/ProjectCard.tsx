@@ -1,4 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   name: string;
@@ -14,9 +15,10 @@ const ProjectCard = ({ name, description, tech, github, live, image }: ProjectCa
     <div className="glass-card p-8 hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col">
       {image && (
         <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
-          <img
+          <Image
             src={image}
             alt={name}
+            fill
             className="object-cover w-full h-full"
           />
         </div>
