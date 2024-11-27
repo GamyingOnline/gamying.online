@@ -25,7 +25,7 @@ export const team = [
   },
   {
     name: "Bhanu Pratap Singh",
-    role: "Developer | Designer",
+    role: "Frontend Developer | Designer",
     image: "/devs/bhanu.jpeg",
     github: "https://github.com/codeptor",
     linkedin: "https://linkedin.com/in/bhanu911",
