@@ -43,7 +43,7 @@ const Index: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaGithub className="text-[#00FFFF]" size={22} />
+                      <FaGithub className="text-[#f0ebeb]" size={22} />
                       <span>View GitHub</span>
                     </a>
                     <a
@@ -51,7 +51,7 @@ const Index: React.FC = () => {
                       className="btn-primary"
                       onClick={(e) => scrollToSection(e, 'about')}
                     >
-                      <IoSparkles className="text-[#FF3BFF]" size={22} />
+                      <IoSparkles className="text-[#f3f0f3]" size={22} />
                       <span>About Us</span>
                     </a>
                   </div>

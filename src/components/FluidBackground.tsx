@@ -64,18 +64,18 @@ float smootherstep(float x) {
 }
 
 vec3 getEvolvingColor(float t, float speed, float offset) {
-    float slowTime = t * 0.075;  // Slightly faster than before
+    float slowTime = t * 0.20;  
     
     float hueBase = slowTime * speed + offset;
-    float hueModulation = sin(slowTime * 0.07) * 0.1;  
+    float hueModulation = sin(slowTime * 0.29) * 0.1;  
     float hue = fract(hueBase + hueModulation);
     
-    float satBase = 0.75;  // Keep rich base saturation
-    float satModulation = sin(slowTime * 0.045) * 0.15;
+    float satBase = 0.75;
+    float satModulation = sin(slowTime * 0.075) * 0.15;
     float saturation = satBase + satModulation;
     
-    float valBase = 0.85;  // Keep bright base value
-    float valModulation = sin(slowTime * 0.03 + offset * 6.28) * 0.1;
+    float valBase = 0.85;
+    float valModulation = sin(slowTime * 0.05 + offset * 6.28) * 0.1;
     float value = valBase + valModulation;
     
     return hsv2rgb(vec3(hue, saturation, value));
@@ -83,17 +83,17 @@ vec3 getEvolvingColor(float t, float speed, float offset) {
 
 void main() {
     vec2 uv = gl_FragCoord.xy / resolution.xy;
-    float slowTime = time * 0.15;  
+    float slowTime = time * 0.20;  
     
-    float n1 = snoise(uv * 1.1 + slowTime * 0.03);
-    float n2 = snoise(uv * 0.8 - slowTime * 0.025);
-    float n3 = snoise(uv * 1.4 + slowTime * 0.02);
-    float n4 = snoise(uv * 0.6 - slowTime * 0.035);
+    float n1 = snoise(uv * 1.1 + slowTime * 0.05);
+    float n2 = snoise(uv * 0.8 - slowTime * 0.045);
+    float n3 = snoise(uv * 1.4 + slowTime * 0.04);
+    float n4 = snoise(uv * 0.6 - slowTime * 0.055);
     
-    vec3 color1 = getEvolvingColor(time, 0.005, 0.0);    // Slightly faster
-    vec3 color2 = getEvolvingColor(time, 0.004, 0.25);   // Slightly faster
-    vec3 color3 = getEvolvingColor(time, 0.006, 0.5);    // Slightly faster
-    vec3 color4 = getEvolvingColor(time, 0.0045, 0.75);  // Slightly faster
+    vec3 color1 = getEvolvingColor(time, 0.007, 0.0);
+    vec3 color2 = getEvolvingColor(time, 0.006, 0.25);
+    vec3 color3 = getEvolvingColor(time, 0.008, 0.5);
+    vec3 color4 = getEvolvingColor(time, 0.0065, 0.75);
     
     float blend1 = smootherstep((n1 * 0.3 + 0.5) * 0.5 + 0.25);
     float blend2 = smootherstep((n2 * 0.3 + 0.5) * 0.4 + 0.3);
