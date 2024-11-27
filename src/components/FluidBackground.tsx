@@ -125,7 +125,7 @@ const FluidBackground: React.FC = () => {
       generateRandomColor()
     ];
 
-    let startTime = Date.now();
+    const startTime = Date.now();
     let animationFrameId: number;
 
     const resizeCanvas = () => {
