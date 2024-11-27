@@ -83,12 +83,12 @@ vec3 getEvolvingColor(float t, float speed, float offset) {
 
 void main() {
     vec2 uv = gl_FragCoord.xy / resolution.xy;
-    float slowTime = time * 0.20;  
+    float slowTime = time * 0.40;  
     
-    float n1 = snoise(uv * 1.1 + slowTime * 0.05);
+    float n1 = snoise(uv * 1.1 + slowTime * 0.15);
     float n2 = snoise(uv * 0.8 - slowTime * 0.045);
-    float n3 = snoise(uv * 1.4 + slowTime * 0.04);
-    float n4 = snoise(uv * 0.6 - slowTime * 0.055);
+    float n3 = snoise(uv * 1.4 + slowTime * 0.08);
+    float n4 = snoise(uv * 0.6 - slowTime * 0.085);
     
     vec3 color1 = getEvolvingColor(time, 0.007, 0.0);
     vec3 color2 = getEvolvingColor(time, 0.006, 0.25);
