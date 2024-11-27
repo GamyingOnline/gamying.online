@@ -3,43 +3,53 @@
 @tailwind utilities;
 
 .glass-card {
-  @apply backdrop-blur-xl rounded-xl relative z-10;
+  @apply backdrop-blur-2xl rounded-xl relative z-10;
   background: linear-gradient(
     135deg,
-    rgba(28, 0, 45, 0.95) 0%,
-    rgba(20, 0, 35, 0.95) 100%
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-5px);
   box-shadow: 
-    0 20px 40px rgba(92, 36, 255, 0.2),
-    0 0 20px rgba(255, 59, 255, 0.1);
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
 }
 
 .hero-button {
-  @apply px-8 py-4 rounded-xl flex items-center gap-3 font-bold relative overflow-hidden;
+  @apply px-8 py-4 rounded-xl flex items-center gap-3 font-bold relative overflow-hidden backdrop-blur-xl;
   background: linear-gradient(
     135deg,
-    rgba(28, 0, 45, 0.95) 0%,
-    rgba(20, 0, 35, 0.95) 100%
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
   box-shadow: 
-    0 10px 30px rgba(255, 59, 255, 0.2),
-    0 0 20px rgba(92, 36, 255, 0.1);
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
 }
 
 .hero-button .icon {
@@ -58,43 +68,55 @@
 .tag-primary {
   background: linear-gradient(
     135deg,
-    rgba(28, 0, 45, 0.95) 0%,
-    rgba(20, 0, 35, 0.95) 100%
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 100%
   );
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   letter-spacing: 0.01em;
+  backdrop-filter: blur(8px);
 }
 
 .tag-primary:hover {
-  border-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
   box-shadow: 
-    0 4px 12px rgba(255, 59, 255, 0.15),
-    0 2px 4px rgba(92, 36, 255, 0.1);
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    0 2px 4px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
 }
 
 .tag-secondary {
   background: linear-gradient(
     135deg,
-    rgba(28, 0, 45, 0.95) 0%,
-    rgba(20, 0, 35, 0.95) 100%
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 100%
   );
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   letter-spacing: 0.01em;
+  backdrop-filter: blur(8px);
 }
 
 .tag-secondary:hover {
-  border-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
   box-shadow: 
-    0 4px 12px rgba(92, 36, 255, 0.15),
-    0 2px 4px rgba(0, 255, 255, 0.1);
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    0 2px 4px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
 }
 
 @layer components {
@@ -103,21 +125,26 @@
     width: 190px;
     background: linear-gradient(
       135deg,
-      rgba(28, 0, 45, 0.95) 0%,
-      rgba(20, 0, 35, 0.95) 100%
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.1) 100%
     );
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 
-      0 8px 20px rgba(255, 59, 255, 0.15),
-      0 2px 8px rgba(92, 36, 255, 0.1);
+      0 8px 20px rgba(0, 0, 0, 0.2),
+      0 2px 8px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.15) 100%
+    );
   }
 
   .btn-primary span {
