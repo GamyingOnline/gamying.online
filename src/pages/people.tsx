@@ -45,7 +45,7 @@ const People = () => {
     },
     {
       name: "Karan Pargal",
-      role: "10x Hackathon Winner | Fullstack Web3 Developer",
+      role: "11x Hackathon Winner | Fullstack Web3 Developer",
       image: "/devs/karan.jpeg",
       github: "https://github.com/karanpargal",
       linkedin: "https://linkedin.com/in/karan-pargal",
