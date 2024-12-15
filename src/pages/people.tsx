@@ -37,14 +37,6 @@ const People = () => {
     },
     
     {
-      name: "Rupansh Sekar",
-      role: "Everything Developer",
-      image: "/devs/rupansh.jpeg",
-      github: "https://github.com/rupansh",
-      linkedin: "https://linkedin.com/in/rupansh-s",
-      portfolio: "https://rupansh.github.io",
-    },
-    {
       name: "Aman Goyal",
       role: "AI Engineer | DevOps",
       image: "/devs/aman.jpeg",
@@ -53,7 +45,15 @@ const People = () => {
       portfolio: "https://agoyel25.github.io",
     },
     {
-      name: "Chindi Rupansh Sekar",
+      name: "Karan Pargal",
+      role: "11x Hackathon Winner | Fullstack Web3 Developer",
+      image: "/devs/karan.jpeg",
+      github: "https://github.com/karanpargal",
+      linkedin: "https://linkedin.com/in/karan-pargal",
+      portfolio: "https://karanpargal.vercel.app/",
+    },
+    {
+      name: "Rupansh Sekar",
       role: "Everything Developer",
       image: "/devs/rupansh.jpeg",
       github: "https://github.com/rupansh",
