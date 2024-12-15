@@ -1,12 +1,11 @@
-import React from 'react';
-import Header from '../components/Header';
-import PersonCard from '../components/PersonCard';
+import Header from "../components/Header";
+import PersonCard from "../components/PersonCard";
 
 const People = () => {
   const team = [
     {
       name: "Ayam Dobhal",
-      role: "Founder & Lead Developer",
+      role: "Founder | Lead Developer",
       image: "/devs/ayam.jpg",
       github: "https://github.com/ayamdobhal",
       linkedin: "https://linkedin.com/in/ayamdobhal",
@@ -14,7 +13,7 @@ const People = () => {
     },
     {
       name: "Neeraj Godiyal",
-      role: "Creative Frontend Specialist / Co-Founder",
+      role: "Co-Founder | Creative Frontend Specialist",
       image: "/devs/koro.png",
       github: "https://github.com/NeerajGodiyal",
       linkedin: "https://linkedin.com/in/neerajgodiyal",
@@ -22,7 +21,7 @@ const People = () => {
     },
     {
       name: "Sumit Kumar",
-      role: "Lead Developer / CTO",
+      role: "CTO | Lead Developer",
       image: "/devs/sumit.jpeg",
       github: "https://github.com/imsk17",
       linkedin: "https://linkedin.com/in/imsk17",
@@ -30,7 +29,7 @@ const People = () => {
     },
     {
       name: "Bhanu Pratap Singh",
-      role: "Developer & Designer",
+      role: "Developer | Designer",
       image: "/devs/bhanu.jpeg",
       github: "https://github.com/codeptor",
       linkedin: "https://linkedin.com/in/bhanu911",
@@ -38,8 +37,16 @@ const People = () => {
     },
     
     {
+      name: "Rupansh Sekar",
+      role: "Everything Developer",
+      image: "/devs/rupansh.jpeg",
+      github: "https://github.com/rupansh",
+      linkedin: "https://linkedin.com/in/rupansh-s",
+      portfolio: "https://rupansh.github.io",
+    },
+    {
       name: "Aman Goyal",
-      role: "AI Engineer & DevOps",
+      role: "AI Engineer | DevOps",
       image: "/devs/aman.jpeg",
       github: "https://github.com/agoyel25",
       linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
@@ -57,13 +64,10 @@ const People = () => {
       name: "Vibhu Prasad",
       role: "Chief Data Officer",
       image: "/devs/vibhu.png",
-      // github: "https://github.com/agoyel25",
-      // linkedin: "https://linkedin.com/in/aman-goyal-a48b0628a",
-      // portfolio: "https://agoyel25.github.io",
     },
     {
       name: "Kunal Singh",
-      role: "Chief Human Resources Officer",
+      role: "Mastermind",
       image: "/devs/kunalsingh.jpg",
       github: "https://github.com/kunxlfr",
       linkedin: "https://www.linkedin.com/in/kunalsingh16",
@@ -97,16 +101,17 @@ const People = () => {
           <div className="mt-16 text-center">
             <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              We&apos;re always looking for talented developers who are passionate about open source
-              and pushing the boundaries of technology.
+              We&apos;re always looking for talented developers who are
+              passionate about open source and pushing the boundaries of
+              technology.
             </p>
             <a
               href="mailto:gamying.online@iamdobhal.dev"
+              target="_blank"
               className="inline-block bg-gradient-to-r from-[#FF3BFF] via-[#ECBFBF] to-[#5C24FF] text-black font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform"
             >
               Apply Now
             </a>
-
           </div>
         </div>
       </main>
