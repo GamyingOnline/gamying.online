@@ -28,6 +28,14 @@ const People = () => {
       portfolio: "https://imsk17.org",
     },
     {
+      name: "Kunal Singh",
+      role: "Mastermind",
+      image: "/devs/kunal.jpeg",
+      github: "https://github.com/kunxlfr",
+      linkedin: "https://www.linkedin.com/in/kunalsingh16",
+      portfolio: "https://kunalsingh.dev",
+    },
+    {
       name: "Bhanu Pratap Singh",
       role: "Developer | Designer",
       image: "/devs/bhanu.jpeg",
@@ -64,14 +72,6 @@ const People = () => {
       name: "Vibhu Prasad",
       role: "Chief Data Officer",
       image: "/devs/vibhu.png",
-    },
-    {
-      name: "Kunal Singh",
-      role: "Mastermind",
-      image: "/devs/kunalsingh.jpg",
-      github: "https://github.com/kunxlfr",
-      linkedin: "https://www.linkedin.com/in/kunalsingh16",
-      portfolio: "https://kunalsingh.dev",
     },
   ];
 
