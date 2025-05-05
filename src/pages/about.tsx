@@ -13,9 +13,12 @@ const About = () => {
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6">Welcome to the Chaos</h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Welcome to the chaotic lair of Tehelka Open-Source Developers,
-              where tech dreams are born, hacked, and occasionally exploded. At
-              GamyingOnline, we&apos;re not just building things; we&apos;re
+              Welcome to the chaotic lair of{" "}
+              <span className="text-gradient animate-glitter">
+                Tehelka Open-Source Developers
+              </span>
+              , where tech dreams are born, hacked, and occasionally exploded.
+              At GamyingOnline, we&apos;re not just building things; we&apos;re
               dismantling the status quo and duct-taping our own weird ideas
               back together. Our mission? To blur the line between brilliance
               and madness (but mostly madness).
